@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Card className="text-center">
-        <Card.Header>Featured</Card.Header>
+        <Card.Header>WORLD CUP 2022</Card.Header>
         <Card.Body>
           <div className="d-flex justify-content-center justify-content-between mx-5 my-4">
             <Card
