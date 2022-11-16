@@ -9,7 +9,7 @@ function App() {
       <Card className="text-center">
         <Card.Header>Featured</Card.Header>
         <Card.Body>
-          <div>
+          <div className="d-flex justify-content-center">
             <Card
               bg={variant.toLowerCase()}
               key={variant}
