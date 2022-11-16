@@ -1,6 +1,8 @@
 import "./App.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import equateur from "./equateur.jpg";
+import qatar from "./qatar.png";
 
 function App() {
   const variant = "Info";
@@ -17,12 +19,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Header</Card.Header>
+              <Card.Header>Groupe A</Card.Header>
               <Card.Body>
-                <Card.Title>{variant} Card Title </Card.Title>
+                <Card.Title>Qatar</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  <img className="w-100" src={qatar} alt="qatar" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -33,12 +34,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Header</Card.Header>
+              <Card.Header>Groupe A</Card.Header>
               <Card.Body>
-                <Card.Title>{variant} Card Title </Card.Title>
+                <Card.Title>Équateur </Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  <img className="w-100" src={equateur} alt="equa" />
                 </Card.Text>
               </Card.Body>
             </Card>
