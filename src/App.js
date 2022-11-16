@@ -1,4 +1,3 @@
-import "./App.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import equateur from "./equateur.jpg";
@@ -6,6 +5,10 @@ import qatar from "./qatar.png";
 
 function App() {
   const variant = "Info";
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
   return (
     <div>
       <Card className="text-center">
