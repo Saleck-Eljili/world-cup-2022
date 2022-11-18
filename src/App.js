@@ -3,28 +3,68 @@ import Card from "react-bootstrap/Card";
 import equateur from "./equateur.jpg";
 import qatar from "./qatar.png";
 import { useState } from "react";
+import { Fireworks } from "fireworks/lib/react";
+import Alert from "react-bootstrap/Alert";
 
 function App() {
   const [variant, setVariant] = useState("Info");
   const [variant2, setVariant2] = useState("Info");
+  const [congrat, setCongrat] = useState("");
+  const [show, setShow] = useState(false);
 
   const getRandomInt = () => {
     let ran = Math.floor(Math.random() * 3);
     if (ran === 1) {
       setVariant("Success");
       setVariant2("Danger");
+      setShow(true);
+      setCongrat("Congrats! QATAR");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
+      setShow(true);
+      setCongrat("Congrats! ECUADOR");
     }
     if (ran === 0) {
       setVariant2("Light");
       setVariant("Light");
+      setCongrat("EQUALITY");
+      setShow(true);
     }
   };
+
+  let fxProps = {
+    count: 3,
+    interval: 200,
+    colors: ["#cc3333", "#4CAF50", "#81C784"],
+    calc: (props, i) => ({
+      ...props,
+      x: (i + 1) * (window.innerWidth / 3) - (i + 1) * 100,
+      y: 200 + Math.random() * 100 - 50 + (i === 2 ? -80 : 0),
+    }),
+  };
+
   return (
     <div>
+      {show && <Fireworks {...fxProps} />}
+      {show && (
+        <div className="d-flex justify-content-center">
+          <Alert
+            className="d-flex justify-content-center"
+            show={show}
+            variant="success"
+            style={{
+              position: "absolute",
+              zIndex: 999,
+              maxWidth: 700,
+            }}
+          >
+            <h1>{congrat}</h1>
+          </Alert>
+        </div>
+      )}
+
       <Card className="text-center">
         <Card.Header>WORLD CUP 2022</Card.Header>
         <Card.Body>
