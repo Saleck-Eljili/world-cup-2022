@@ -254,7 +254,7 @@ function App() {
         </Card.Body>
         <div className="d-flex justify-content-center">
           <Button
-            className="w-25 mb-3"
+            className="wm-100 mb-3"
             variant="primary"
             onClick={getRandomInt}
           >
