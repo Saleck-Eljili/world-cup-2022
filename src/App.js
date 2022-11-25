@@ -1,17 +1,17 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import paysdegalles from "./paysdegalles.png";
-import iran from "./iran.png";
+import tunisie from "./tunisie.png";
+import australie from "./australie.jpg";
 
-import qatar from "./qatar.png";
-import senegal from "./senegal.png";
+import pologne from "./pologne.png";
+import arabiesaoudite from "./arabiesaoudite.png";
 
-import paysbas from "./paysbas.png";
-import equateur from "./equateur.png";
+import france from "./france.jpg";
+import denemark from "./denemark.png";
 
-import angleterre from "./angleterre.png";
-import etatsunis from "./etatsunis.png";
+import argentine from "./argentine.jpg";
+import mexique from "./mexique.png";
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
@@ -44,13 +44,13 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Congrats! pays de galles");
+      setCongrat("Congrats! tunisie");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Congrats! iran");
+      setCongrat("Congrats! australie");
     }
     if (ran === 0) {
       setVariant2("Light");
@@ -64,13 +64,13 @@ function App() {
       setVariant3("Danger");
       setVariant4("Success");
       setShow2(true);
-      setCongrat2("Congrats! sénégal");
+      setCongrat2("Congrats! arabie saoudite");
     }
     if (ran2 === 2) {
       setVariant4("Danger");
       setVariant3("Success");
       setShow2(true);
-      setCongrat2("Congrats! qatar");
+      setCongrat2("Congrats! pologne");
     }
     if (ran2 === 0) {
       setVariant4("Light");
@@ -84,13 +84,13 @@ function App() {
       setVariant5("Success");
       setVariant6("Danger");
       setShow3(true);
-      setCongrat3("Congrats! pays-bas");
+      setCongrat3("Congrats! france");
     }
     if (ran3 === 2) {
       setVariant6("Success");
       setVariant5("Danger");
       setShow3(true);
-      setCongrat3("Congrats! équateur");
+      setCongrat3("Congrats! denemark");
     }
     if (ran3 === 0) {
       setVariant6("Light");
@@ -104,13 +104,13 @@ function App() {
       setVariant7("Success");
       setVariant8("Danger");
       setShow4(true);
-      setCongrat4("Congrats! angleterre");
+      setCongrat4("Congrats! argentine");
     }
     if (ran4 === 2) {
       setVariant8("Success");
       setVariant7("Danger");
       setShow4(true);
-      setCongrat4("Congrats! états-unis");
+      setCongrat4("Congrats! mexique");
     }
     if (ran4 === 0) {
       setVariant8("Light");
@@ -159,15 +159,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe B</Card.Header>
+              <Card.Header>Groupe D</Card.Header>
               <Card.Body>
-                <Card.Title>Pays de galles</Card.Title>
+                <Card.Title>Tunisie</Card.Title>
                 <Card.Text>
-                  <img
-                    className="w-100"
-                    src={paysdegalles}
-                    alt="paysdegalles"
-                  />
+                  <img className="w-100" src={tunisie} alt="tunisie" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -177,11 +173,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe B</Card.Header>
+              <Card.Header>Groupe D</Card.Header>
               <Card.Body>
-                <Card.Title>Iran</Card.Title>
+                <Card.Title>Australie</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={iran} alt="iran" />
+                  <img className="w-100" src={australie} alt="australie" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -212,11 +208,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe A</Card.Header>
+              <Card.Header>Groupe C</Card.Header>
               <Card.Body>
-                <Card.Title>Qatar</Card.Title>
+                <Card.Title>Pologne</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={qatar} alt="qatar" />
+                  <img className="w-100" src={pologne} alt="pologne" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -226,11 +222,15 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe A</Card.Header>
+              <Card.Header>Groupe C</Card.Header>
               <Card.Body>
-                <Card.Title>Sénégal</Card.Title>
+                <Card.Title>Arabie saoudite</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={senegal} alt="senegal" />
+                  <img
+                    className="w-100"
+                    src={arabiesaoudite}
+                    alt="arabiesaoudite"
+                  />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -261,11 +261,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe A</Card.Header>
+              <Card.Header>Groupe D</Card.Header>
               <Card.Body>
-                <Card.Title>Pays-Bas</Card.Title>
+                <Card.Title>France</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={paysbas} alt="paysbas" />
+                  <img className="w-100" src={france} alt="france" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -275,11 +275,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe A</Card.Header>
+              <Card.Header>Groupe D</Card.Header>
               <Card.Body>
-                <Card.Title>Equateur</Card.Title>
+                <Card.Title>Denemark</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={equateur} alt="equateur" />
+                  <img className="w-100" src={denemark} alt="denemark" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -311,11 +311,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe B</Card.Header>
+              <Card.Header>Groupe C</Card.Header>
               <Card.Body>
-                <Card.Title>Angleterre</Card.Title>
+                <Card.Title>Argentine</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={angleterre} alt="angleterre" />
+                  <img className="w-100" src={argentine} alt="argentine" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -325,11 +325,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe B</Card.Header>
+              <Card.Header>Groupe C</Card.Header>
               <Card.Body>
-                <Card.Title>Etats-Unis</Card.Title>
+                <Card.Title>Mexique</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={etatsunis} alt="etatsunis" />
+                  <img className="w-100" src={mexique} alt="mexique" />
                 </Card.Text>
               </Card.Body>
             </Card>
