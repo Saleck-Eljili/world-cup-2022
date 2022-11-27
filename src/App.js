@@ -1,17 +1,18 @@
+import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import japon from "./japon.png";
-import costarica from "./costarica.png";
+import cameroun from "./cameroun.png";
+import serbie from "./serbie.png";
 
-import belgique from "./belgique.png";
-import maroc from "./maroc.png";
+import coreedusud from "./coreedusud.png";
+import ghana from "./ghana.png";
 
-import croatie from "./croatie.png";
-import canada from "./canada.png";
+import bresil from "./bresil.png";
+import suisse from "./suisse.png";
 
-import espagne from "./espagne.png";
-import allemagne from "./allemagne.png";
+import portugal from "./portugal.png";
+import uruguay from "./uruguay.png";
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
@@ -44,18 +45,18 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Congrats! japon");
+      setCongrat("Félicitations! cameroun");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Congrats! costa rica");
+      setCongrat("Félicitations! serbie");
     }
     if (ran === 0) {
       setVariant2("Light");
       setVariant("Light");
-      setCongrat("EQUALITY");
+      setCongrat("ÉGALITÉ");
       setShow(true);
     }
 
@@ -64,18 +65,18 @@ function App() {
       setVariant3("Danger");
       setVariant4("Success");
       setShow2(true);
-      setCongrat2("Congrats! maroc");
+      setCongrat2("Félicitations! ghana");
     }
     if (ran2 === 2) {
       setVariant4("Danger");
       setVariant3("Success");
       setShow2(true);
-      setCongrat2("Congrats! belgique");
+      setCongrat2("Félicitations! corée du sud");
     }
     if (ran2 === 0) {
       setVariant4("Light");
       setVariant3("Light");
-      setCongrat2("EQUALITY");
+      setCongrat2("ÉGALITÉ");
       setShow2(true);
     }
 
@@ -84,18 +85,18 @@ function App() {
       setVariant5("Success");
       setVariant6("Danger");
       setShow3(true);
-      setCongrat3("Congrats! croatie");
+      setCongrat3("Félicitations! brésil");
     }
     if (ran3 === 2) {
       setVariant6("Success");
       setVariant5("Danger");
       setShow3(true);
-      setCongrat3("Congrats! canada");
+      setCongrat3("Félicitations! suisse");
     }
     if (ran3 === 0) {
       setVariant6("Light");
       setVariant5("Light");
-      setCongrat3("EQUALITY");
+      setCongrat3("ÉGALITÉ");
       setShow3(true);
     }
 
@@ -104,25 +105,25 @@ function App() {
       setVariant7("Success");
       setVariant8("Danger");
       setShow4(true);
-      setCongrat4("Congrats! espagne");
+      setCongrat4("Félicitations! portugal");
     }
     if (ran4 === 2) {
       setVariant8("Success");
       setVariant7("Danger");
       setShow4(true);
-      setCongrat4("Congrats! allemagne");
+      setCongrat4("Félicitations! uruguay");
     }
     if (ran4 === 0) {
       setVariant8("Light");
       setVariant7("Light");
-      setCongrat4("EQUALITY");
+      setCongrat4("ÉGALITÉ");
       setShow4(true);
     }
   };
 
   let fxProps = {
     count: 3,
-    interval: 200,
+    interval: 30,
     colors: ["#cc3333", "#4CAF50", "#81C784"],
     calc: (props, i) => ({
       ...props,
@@ -134,7 +135,10 @@ function App() {
   return (
     <div>
       <Card className="text-center">
-        <Card.Header>WORLD CUP 2022</Card.Header>
+        <Card.Header className="d-flex justify-content-center">
+          <img style={{ width: 60 }} src={logo} alt="logo" />
+          <h1>COUPE DU MONDE de la FIFA 2022</h1>
+        </Card.Header>
         {show && <Fireworks {...fxProps} />}
         {show && (
           <div className="d-flex justify-content-center">
@@ -159,11 +163,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe E</Card.Header>
+              <Card.Header>Groupe G</Card.Header>
               <Card.Body>
-                <Card.Title>Japon</Card.Title>
+                <Card.Title>Cameroun</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={japon} alt="japon" />
+                  <img className="w-100" src={cameroun} alt="cameroun" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -173,18 +177,18 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe E</Card.Header>
+              <Card.Header>Groupe G</Card.Header>
               <Card.Body>
-                <Card.Title>Costa rica</Card.Title>
+                <Card.Title>Serbie</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={costarica} alt="costarica" />
+                  <img className="w-100" src={serbie} alt="serbie" />
                 </Card.Text>
               </Card.Body>
             </Card>
           </div>
         </Card.Body>
         <hr />
-        {show2 && <Fireworks {...fxProps} />}
+        {/* {show2 && <Fireworks {...fxProps} />} */}
         {show2 && (
           <div className="d-flex justify-content-center">
             <Alert
@@ -208,11 +212,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Belgique</Card.Title>
+                <Card.Title>Corée du sud</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={belgique} alt="belgique" />
+                  <img className="w-100" src={coreedusud} alt="coreedusud" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -222,18 +226,18 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Maroc</Card.Title>
+                <Card.Title>Ghana</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={maroc} alt="maroc" />
+                  <img className="w-100" src={ghana} alt="ghana" />
                 </Card.Text>
               </Card.Body>
             </Card>
           </div>
         </Card.Body>
         <hr />
-        {show3 && <Fireworks {...fxProps} />}
+        {/* {show3 && <Fireworks {...fxProps} />} */}
         {show3 && (
           <div className="d-flex justify-content-center">
             <Alert
@@ -257,11 +261,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe G</Card.Header>
               <Card.Body>
-                <Card.Title>Croatie</Card.Title>
+                <Card.Title>Brésil</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={croatie} alt="croatie" />
+                  <img className="w-100" src={bresil} alt="bresil" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -271,11 +275,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe G</Card.Header>
               <Card.Body>
-                <Card.Title>Canada</Card.Title>
+                <Card.Title>Suisse</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={canada} alt="canada" />
+                  <img className="w-100" src={suisse} alt="suisse" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -283,7 +287,7 @@ function App() {
         </Card.Body>
 
         <hr />
-        {show4 && <Fireworks {...fxProps} />}
+        {/* {show4 && <Fireworks {...fxProps} />} */}
         {show4 && (
           <div className="d-flex justify-content-center">
             <Alert
@@ -307,11 +311,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe E</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Espagne</Card.Title>
+                <Card.Title>Portugal</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={espagne} alt="espagne" />
+                  <img className="w-100" src={portugal} alt="portugal" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -321,11 +325,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe E</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Allemagne</Card.Title>
+                <Card.Title>Uruguay</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={allemagne} alt="allemagne" />
+                  <img className="w-100" src={uruguay} alt="uruguay" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -337,7 +341,7 @@ function App() {
             variant="primary"
             onClick={getRandomInt}
           >
-            Who will win
+            Qui va gagner
           </Button>
         </div>
 
