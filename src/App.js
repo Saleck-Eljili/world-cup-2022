@@ -111,7 +111,7 @@ function App() {
       setVariant8("Success");
       setVariant7("Danger");
       setShow4(true);
-      setCongrat4("Félicitations! bresil");
+      setCongrat4("Félicitations! brésil");
     }
     if (ran4 === 0) {
       setVariant8("Light");
@@ -327,7 +327,7 @@ function App() {
             >
               <Card.Header>Groupe G</Card.Header>
               <Card.Body>
-                <Card.Title>Bresil</Card.Title>
+                <Card.Title>Brésil</Card.Title>
                 <Card.Text>
                   <img className="w-100" src={bresil} alt="bresil" />
                 </Card.Text>
