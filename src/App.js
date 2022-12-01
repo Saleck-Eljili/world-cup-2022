@@ -2,11 +2,11 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import croatie from "./croatie.png";
-import belgique from "./belgique.png";
+import coreedusud from "./coreedusud.png";
+import portugal from "./portugal.png";
 
-import canada from "./canada.png";
-import maroc from "./maroc.png";
+import ghana from "./ghana.png";
+import uruguay from "./uruguay.png";
 
 import japon from "./japon.png";
 import espagne from "./espagne.png";
@@ -45,13 +45,13 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Félicitations! croatie");
+      setCongrat("Félicitations! corée du sud");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Félicitations! belgique");
+      setCongrat("Félicitations! portugal");
     }
     if (ran === 0) {
       setVariant2("Light");
@@ -65,13 +65,13 @@ function App() {
       setVariant3("Danger");
       setVariant4("Success");
       setShow2(true);
-      setCongrat2("Félicitations! maroc");
+      setCongrat2("Félicitations! uruguay");
     }
     if (ran2 === 2) {
       setVariant4("Danger");
       setVariant3("Success");
       setShow2(true);
-      setCongrat2("Félicitations! canada");
+      setCongrat2("Félicitations! ghana");
     }
     if (ran2 === 0) {
       setVariant4("Light");
@@ -163,11 +163,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Croatie</Card.Title>
+                <Card.Title>Corée du Sud</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={croatie} alt="croatie" />
+                  <img className="w-100" src={coreedusud} alt="coreedusud" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -177,11 +177,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Belgique</Card.Title>
+                <Card.Title>Portugal</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={belgique} alt="belgique" />
+                  <img className="w-100" src={portugal} alt="portugal" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -212,11 +212,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Canada</Card.Title>
+                <Card.Title>Ghana</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={canada} alt="canada" />
+                  <img className="w-100" src={ghana} alt="ghana" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -226,11 +226,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>Groupe F</Card.Header>
+              <Card.Header>Groupe H</Card.Header>
               <Card.Body>
-                <Card.Title>Maroc</Card.Title>
+                <Card.Title>Uruguay</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={maroc} alt="maroc" />
+                  <img className="w-100" src={uruguay} alt="uruguay" />
                 </Card.Text>
               </Card.Body>
             </Card>
