@@ -2,11 +2,11 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import paysbas from "./paysbas.png";
-import etatsunis from "./etatsunis.png";
+import france from "./france.jpg";
+import pologne from "./pologne.png";
 
-import argentine from "./argentine.jpg";
-import australie from "./australie.jpg";
+import angleterre from "./angleterre.png";
+import senegal from "./senegal.png";
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
@@ -29,13 +29,13 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Félicitations! pays-bas");
+      setCongrat("Félicitations! france");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Félicitations! etats-unis");
+      setCongrat("Félicitations! pologne");
     }
     if (ran === 0) {
       setVariant2("Light");
@@ -49,13 +49,13 @@ function App() {
       setVariant3("Danger");
       setVariant4("Success");
       setShow2(true);
-      setCongrat2("Félicitations! australie");
+      setCongrat2("Félicitations! sénégal");
     }
     if (ran2 === 2) {
       setVariant4("Danger");
       setVariant3("Success");
       setShow2(true);
-      setCongrat2("Félicitations! argentine");
+      setCongrat2("Félicitations! angleterre");
     }
     if (ran2 === 0) {
       setVariant4("Light");
@@ -107,11 +107,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>1/8 de finale</Card.Header>
+              <Card.Header>3/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Pays-Bas</Card.Title>
+                <Card.Title>France</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={paysbas} alt="paysbas" />
+                  <img className="w-100" src={france} alt="france" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -121,11 +121,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>1/8 de finale</Card.Header>
+              <Card.Header>3/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Etats-Unis</Card.Title>
+                <Card.Title>Pologne</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={etatsunis} alt="etatsunis" />
+                  <img className="w-100" src={pologne} alt="pologne" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -156,11 +156,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>2/8 de finale</Card.Header>
+              <Card.Header>4/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Argentine</Card.Title>
+                <Card.Title>Angleterre</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={argentine} alt="argentine" />
+                  <img className="w-100" src={angleterre} alt="angleterre" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -170,11 +170,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>2/8 de finale</Card.Header>
+              <Card.Header>4/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Australie</Card.Title>
+                <Card.Title>Sénégal</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={australie} alt="australie" />
+                  <img className="w-100" src={senegal} alt="senegal" />
                 </Card.Text>
               </Card.Body>
             </Card>
