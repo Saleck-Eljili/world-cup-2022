@@ -56,6 +56,7 @@ function App() {
       setVariant3("Success");
       setShow2(true);
       setCongrat2("Félicitations! brésil");
+
     }
     if (ran2 === 0) {
       setVariant4("Light");
@@ -112,6 +113,7 @@ function App() {
                 <Card.Title>Japon</Card.Title>
                 <Card.Text>
                   <img className="w-100" src={japon} alt="japon" />
+
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -126,6 +128,7 @@ function App() {
                 <Card.Title>Croatie</Card.Title>
                 <Card.Text>
                   <img className="w-100" src={croatie} alt="croatie" />
+
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -175,6 +178,7 @@ function App() {
                 <Card.Title>Corée du Sud</Card.Title>
                 <Card.Text>
                   <img className="w-100" src={coreedusud} alt="coreedusud" />
+
                 </Card.Text>
               </Card.Body>
             </Card>
