@@ -38,10 +38,19 @@ function App() {
       setCongrat("Félicitations! espagne");
     }
     if (ran === 0) {
-      setVariant2("Light");
-      setVariant("Light");
-      setCongrat("ÉGALITÉ");
-      setShow(true);
+      let equal = Math.floor(Math.random() * 2);
+      if (equal === 0) {
+        setVariant2("Light");
+        setVariant("Light");
+        setCongrat("P - ÉGALITÉ");
+        setShow(true);
+      }
+      if (equal === 1) {
+        setVariant2("Light");
+        setVariant("Light");
+        setCongrat("ÉGALITÉ - P");
+        setShow(true);
+      }
     }
 
     let ran2 = Math.floor(Math.random() * 3);
@@ -58,10 +67,19 @@ function App() {
       setCongrat2("Félicitations! portugal");
     }
     if (ran2 === 0) {
-      setVariant4("Light");
-      setVariant3("Light");
-      setCongrat2("ÉGALITÉ");
-      setShow2(true);
+      let equal = Math.floor(Math.random() * 2);
+      if (equal === 0) {
+        setVariant4("Light");
+        setVariant3("Light");
+        setCongrat2("P - ÉGALITÉ");
+        setShow2(true);
+      }
+      if (equal === 1) {
+        setVariant4("Light");
+        setVariant3("Light");
+        setCongrat2("ÉGALITÉ - P");
+        setShow2(true);
+      }
     }
   };
 
