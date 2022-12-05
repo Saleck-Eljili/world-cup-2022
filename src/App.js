@@ -2,11 +2,13 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import japon from "./japon.png";
-import croatie from "./croatie.png";
 
-import bresil from "./bresil.png";
-import coreedusud from "./coreedusud.png";
+import maroc from "./maroc.png";
+import espagne from "./espagne.png";
+
+import portugal from "./portugal.png";
+import suisse from "./suisse.png";
+
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
@@ -29,19 +31,28 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Félicitations! japon");
+      setCongrat("Félicitations! maroc");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Félicitations! croatie");
+      setCongrat("Félicitations! espagne");
     }
     if (ran === 0) {
-      setVariant2("Light");
-      setVariant("Light");
-      setCongrat("ÉGALITÉ");
-      setShow(true);
+      let equal = Math.floor(Math.random() * 2);
+      if (equal === 0) {
+        setVariant2("Light");
+        setVariant("Light");
+        setCongrat("P - ÉGALITÉ");
+        setShow(true);
+      }
+      if (equal === 1) {
+        setVariant2("Light");
+        setVariant("Light");
+        setCongrat("ÉGALITÉ - P");
+        setShow(true);
+      }
     }
 
     let ran2 = Math.floor(Math.random() * 3);
@@ -49,20 +60,28 @@ function App() {
       setVariant3("Danger");
       setVariant4("Success");
       setShow2(true);
-      setCongrat2("Félicitations! corée du sud");
+      setCongrat2("Félicitations! suisse");
     }
     if (ran2 === 2) {
       setVariant4("Danger");
       setVariant3("Success");
       setShow2(true);
-      setCongrat2("Félicitations! brésil");
-
+      setCongrat2("Félicitations! portugal");
     }
     if (ran2 === 0) {
-      setVariant4("Light");
-      setVariant3("Light");
-      setCongrat2("ÉGALITÉ");
-      setShow2(true);
+      let equal = Math.floor(Math.random() * 2);
+      if (equal === 0) {
+        setVariant4("Light");
+        setVariant3("Light");
+        setCongrat2("P - ÉGALITÉ");
+        setShow2(true);
+      }
+      if (equal === 1) {
+        setVariant4("Light");
+        setVariant3("Light");
+        setCongrat2("ÉGALITÉ - P");
+        setShow2(true);
+      }
     }
   };
 
@@ -108,12 +127,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>5/8 de finale</Card.Header>
+              <Card.Header>7/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Japon</Card.Title>
+                <Card.Title>Maroc</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={japon} alt="japon" />
-
+                  <img className="w-100" src={maroc} alt="maroc" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -123,12 +141,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>5/8 de finale</Card.Header>
+              <Card.Header>7/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Croatie</Card.Title>
+                <Card.Title>Espagne</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={croatie} alt="croatie" />
-
+                  <img className="w-100" src={espagne} alt="espagne" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -159,11 +176,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>6/8 de finale</Card.Header>
+              <Card.Header>8/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Brésil</Card.Title>
+                <Card.Title>Portugal</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={bresil} alt="bresil" />
+                  <img className="w-100" src={portugal} alt="portugal" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -173,12 +190,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>6/8 de finale</Card.Header>
+              <Card.Header>8/8 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Corée du Sud</Card.Title>
+                <Card.Title>Suisse</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={coreedusud} alt="coreedusud" />
-
+                  <img className="w-100" src={suisse} alt="suisse" />
                 </Card.Text>
               </Card.Body>
             </Card>
