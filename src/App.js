@@ -2,11 +2,13 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+
 import maroc from "./maroc.png";
 import espagne from "./espagne.png";
 
 import portugal from "./portugal.png";
 import suisse from "./suisse.png";
+
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
