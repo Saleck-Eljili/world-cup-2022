@@ -2,13 +2,11 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+import croatie from "./croatie.png";
+import bresil from "./bresil.png";
 
-import maroc from "./maroc.png";
-import espagne from "./espagne.png";
-
-import portugal from "./portugal.png";
-import suisse from "./suisse.png";
-
+import paysbas from "./paysbas.png";
+import argentine from "./argentine.jpg";
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
@@ -31,13 +29,13 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Félicitations! maroc");
+      setCongrat("Félicitations! croatie");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Félicitations! espagne");
+      setCongrat("Félicitations! brésil");
     }
     if (ran === 0) {
       let equal = Math.floor(Math.random() * 2);
@@ -60,13 +58,13 @@ function App() {
       setVariant3("Danger");
       setVariant4("Success");
       setShow2(true);
-      setCongrat2("Félicitations! suisse");
+      setCongrat2("Félicitations! argentine");
     }
     if (ran2 === 2) {
       setVariant4("Danger");
       setVariant3("Success");
       setShow2(true);
-      setCongrat2("Félicitations! portugal");
+      setCongrat2("Félicitations! pays-bas");
     }
     if (ran2 === 0) {
       let equal = Math.floor(Math.random() * 2);
@@ -127,11 +125,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>7/8 de finale</Card.Header>
+              <Card.Header>1/4 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Maroc</Card.Title>
+                <Card.Title>Croatie</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={maroc} alt="maroc" />
+                  <img className="w-100" src={croatie} alt="croatie" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -141,11 +139,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>7/8 de finale</Card.Header>
+              <Card.Header>1/4 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Espagne</Card.Title>
+                <Card.Title>Brésil</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={espagne} alt="espagne" />
+                  <img className="w-100" src={bresil} alt="bresil" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -176,11 +174,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>8/8 de finale</Card.Header>
+              <Card.Header>2/4 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Portugal</Card.Title>
+                <Card.Title>Pays-Bas</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={portugal} alt="portugal" />
+                  <img className="w-100" src={paysbas} alt="paysbas" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -190,11 +188,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>8/8 de finale</Card.Header>
+              <Card.Header>2/4 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Suisse</Card.Title>
+                <Card.Title>Argentine</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={suisse} alt="suisse" />
+                  <img className="w-100" src={argentine} alt="argentine" />
                 </Card.Text>
               </Card.Body>
             </Card>
