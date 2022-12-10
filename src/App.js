@@ -2,11 +2,8 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import angleterre from "./angleterre.png";
-import france from "./france.jpg";
-
-import maroc from "./maroc.png";
-import portugal from "./portugal.png";
+import argentine from "./argentine.jpg";
+import croatie from "./croatie.png";
 
 import { useState } from "react";
 import { Fireworks } from "fireworks/lib/react";
@@ -18,24 +15,19 @@ function App() {
   const [congrat, setCongrat] = useState("");
   const [show, setShow] = useState(false);
 
-  const [variant3, setVariant3] = useState("Info");
-  const [variant4, setVariant4] = useState("Info");
-  const [congrat2, setCongrat2] = useState("");
-  const [show2, setShow2] = useState(false);
-
   const getRandomInt = () => {
     let ran = Math.floor(Math.random() * 3);
     if (ran === 1) {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Félicitations! angleterre");
+      setCongrat("Félicitations! argentine");
     }
     if (ran === 2) {
       setVariant2("Success");
       setVariant("Danger");
       setShow(true);
-      setCongrat("Félicitations! france");
+      setCongrat("Félicitations! croatie");
     }
     if (ran === 0) {
       let equal = Math.floor(Math.random() * 2);
@@ -50,35 +42,6 @@ function App() {
         setVariant("Light");
         setCongrat("ÉGALITÉ - P");
         setShow(true);
-      }
-    }
-
-    let ran2 = Math.floor(Math.random() * 3);
-    if (ran2 === 1) {
-      setVariant3("Danger");
-      setVariant4("Success");
-      setShow2(true);
-      setCongrat2("Félicitations! portugal");
-    }
-    if (ran2 === 2) {
-      setVariant4("Danger");
-      setVariant3("Success");
-      setShow2(true);
-      setCongrat2("Félicitations! maroc");
-    }
-    if (ran2 === 0) {
-      let equal = Math.floor(Math.random() * 2);
-      if (equal === 0) {
-        setVariant4("Light");
-        setVariant3("Light");
-        setCongrat2("P - ÉGALITÉ");
-        setShow2(true);
-      }
-      if (equal === 1) {
-        setVariant4("Light");
-        setVariant3("Light");
-        setCongrat2("ÉGALITÉ - P");
-        setShow2(true);
       }
     }
   };
@@ -125,11 +88,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>3/4 de finale</Card.Header>
+              <Card.Header>1/2 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>Angleterre</Card.Title>
+                <Card.Title>Argentine</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={angleterre} alt="angleterre" />
+                  <img className="w-100" src={argentine} alt="argentine" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -139,60 +102,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>3/4 de finale</Card.Header>
+              <Card.Header>1/2 de finale</Card.Header>
               <Card.Body>
-                <Card.Title>France</Card.Title>
+                <Card.Title>Croatie</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={france} alt="france" />
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
-        </Card.Body>
-        <hr />
-        {/* {show2 && <Fireworks {...fxProps} />} */}
-        {show2 && (
-          <div className="d-flex justify-content-center">
-            <Alert
-              className="d-flex justify-content-center"
-              show={show2}
-              variant="success"
-              style={{
-                zIndex: 999,
-                maxWidth: 700,
-              }}
-            >
-              <h1>{congrat2}</h1>
-            </Alert>
-          </div>
-        )}
-        <Card.Body>
-          <div className="d-flex justify-content-center justify-content-between mx-5 my-4">
-            <Card
-              bg={variant3.toLowerCase()}
-              text={variant3.toLowerCase() === "light" ? "dark" : "white"}
-              style={{ width: "18rem" }}
-              className="mb-2"
-            >
-              <Card.Header>4/4 de finale</Card.Header>
-              <Card.Body>
-                <Card.Title>Maroc</Card.Title>
-                <Card.Text>
-                  <img className="w-100" src={maroc} alt="maroc" />
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card
-              bg={variant4.toLowerCase()}
-              text={variant4.toLowerCase() === "light" ? "dark" : "white"}
-              style={{ width: "18rem" }}
-              className="mb-2"
-            >
-              <Card.Header>4/4 de finale</Card.Header>
-              <Card.Body>
-                <Card.Title>Portugal</Card.Title>
-                <Card.Text>
-                  <img className="w-100" src={portugal} alt="portugal" />
+                  <img className="w-100" src={croatie} alt="croatie" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -209,7 +123,9 @@ function App() {
           </Button>
         </div>
 
-        <Card.Footer className="text-muted">eljili©2022</Card.Footer>
+        <Card.Footer className="text-muted fixed-bottom">
+          eljili©2022
+        </Card.Footer>
       </Card>
     </div>
   );
