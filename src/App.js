@@ -2,7 +2,7 @@ import logo from "./logo.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import france from "./france.jpg";
+import croatie from "./croatie.png";
 import maroc from "./maroc.png";
 
 import { useState } from "react";
@@ -21,7 +21,7 @@ function App() {
       setVariant("Success");
       setVariant2("Danger");
       setShow(true);
-      setCongrat("Félicitations! france");
+      setCongrat("Félicitations! croatie");
     }
     if (ran === 2) {
       setVariant2("Success");
@@ -88,11 +88,11 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>2/2 de finale</Card.Header>
+              <Card.Header>la 3ème place</Card.Header>
               <Card.Body>
-                <Card.Title>France</Card.Title>
+                <Card.Title>Croatie</Card.Title>
                 <Card.Text>
-                  <img className="w-100" src={france} alt="france" />
+                  <img className="w-100" src={croatie} alt="croatie" />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -102,7 +102,7 @@ function App() {
               style={{ width: "18rem" }}
               className="mb-2"
             >
-              <Card.Header>2/2 de finale</Card.Header>
+              <Card.Header>la 3ème place</Card.Header>
               <Card.Body>
                 <Card.Title>Maroc</Card.Title>
                 <Card.Text>
